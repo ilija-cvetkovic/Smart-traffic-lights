@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <title>SEMAFORI</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        const firebaseConfig = {
+            <!-- INSERT FIREBASE CONFIG -->
+        };
+
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body onload="startTime()">
+    <div class="row">
+        <h2>SEMAFOR</h2>
+        <div class="container">
+            <h3>Prolaznost vozila</h3>
+            <div>
+                <label>Automobili</label>
+                <h1 id="automobil"></h1>
+            </div>
+            <div>
+                <label>Kamioni</label>
+                <h1 id="kamion"></h1>
+            </div>
+            <div>
+                <label>Autobusi</label>
+                <h1 id="autobus"></h1>
+            </div>
+            <div>
+                <label>Ukupno</label>
+                <h1 id="ukupno"></h1>
+            </div>
+        </div>
+    </div>
+    <div class="absolute">
+        <label>TEMPERATURA</label>
+        <h1 id="temp"></h1>
+    </div>
+    <div class="a">
+        <label></label>
+        <h1 id="vreme"></h1>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
